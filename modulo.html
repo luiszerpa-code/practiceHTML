@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pagina de Luis y Graciane</title>
+<!-- ICONOS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!-- STILOS -->
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+
+  <body>  
+    <div id="wrapper">
+
+<!-- BANNER -->
+      <div id="banner-wrapper">
+        <header>
+          <div class="header-inner">
+            <a href="modulo.html" id="logo">
+              <img src="pics/logo.png" alt="LOGO">
+            </a>
+
+            <nav>
+              <a href="#" id="menu-icon">
+                <i class="fa fa-bars"></i>
+              </a>
+
+              <ul>
+                <li>
+                  <a href="modulo.html" class="current">Inicio</a>
+                </li>
+                <li>
+                  <a href="#trips">Paseos</a>
+                </li>
+                <li>
+                  <a href="#travels">Viajes</a>
+                </li>
+                <li>
+                  <a href="#specialdays">Familia & Amigos</a>
+                </li>
+              </ul>
+
+            </nav>
+
+          </div>
+        </header>
+
+        <section class="slide-wrap">
+          <ul class="slider1">
+            <li> <img src="slider/slider1.png" alt="Nosotros"></li>
+            <li> <img src="slider/slider2.png" alt="Nosotros"></li>
+            <li> <img src="slider/slider3.png" alt="Nosotros"></li>
+            <li> <img src="slider/slider4.png" alt="Nosotros"></li>
+            <li> <img src="slider/slider5.png" alt="Nosotros"></li>
+          </ul>
+        </section>
+
+        </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <form action="" class="formulario"
+    onsubmit="return validarForma(this);">
+
+      <input type="hidden" name="oculto" value="valorOculto">
+
+      <table width="400" id="one-column-emphasis">
+        <h2>
+          INSERTAR PROYECTOS
+        </h2>
+        <tr>
+          <td class="oce-first">
+            Proyecto
+          </td>
+          <td>
+            <input class="default" type="text" name="nombre" value="Nombre del Proyecto" onfocus="this.select();"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="oce-first">
+            Periodo
+          </td>
+          <td>
+            Mediano Plazo<input type="radio" name="nacionalidad" value="B">
+            &nbsp;&nbsp;&nbsp;
+            Largo Plazo<input type="radio" name="nacionalidad" value="V">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="oce-first">
+            Estilo:
+          </td>
+          <td>
+            Compras <input type="checkbox" name="intereses" value="Compras">
+            &nbsp;&nbsp;&nbsp;
+            Viajes <input type="checkbox" name="intereses" value="Viajes">
+            &nbsp;&nbsp;&nbsp;
+            Gastronomia <input type="checkbox" name="intereses" value="Gastronomia">
+            &nbsp;&nbsp;&nbsp;
+            Deportes <input type="checkbox" name="intereses" value="Deportes">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="oce-first">
+            Dentro de...:
+          </td>
+          <td>
+            6 Meses <input type="checkbox" name="intereses" value="6 Meses">
+            &nbsp;&nbsp;&nbsp;
+            1 Año <input type="checkbox" name="intereses" value="1 Año">
+            &nbsp;&nbsp;&nbsp;
+            2 Años <input type="checkbox" name="intereses" value="2 Años">
+            &nbsp;&nbsp;&nbsp;
+            Mas... <input type="checkbox" name="intereses" value="Mas...">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="oce-first">
+            Comentarios
+          </td>
+          <td>
+            <textarea name="comentarios" cols="30" rows="2" class="default" onfocus="this.select();">
+              Como vamos a hacerlo?
+            </textarea>
+          </td>
+        </tr>
+      <tr>
+        <td>
+          <input type="submit" value="Enviar" class="default">
+        </td>
+        <td>
+          <input type="reset" value="Limpiar" class="default">
+        </td>
+      </tr>
+    </table>
+    </form>
+    <!--fin formulario-->
+
+
+<br/>
+    <section class="one-third" id="trips">
+      <div class="icon-wrap">
+        <i class="fa fa-map"></i>
+      </div>
+      <h3>Paseos</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </section>
+    <section class="one-third" id="travels">
+      <div class="icon-wrap">
+        <i class="fa fa-plane"></i>
+      </div>
+      <h3>Viajes</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </section>
+    <section class="one-third" id="specialdays">
+      <div class="icon-wrap">
+        <i class="fa fa-heart"></i>
+      </div>
+      <h3>Familia & Amigos</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <div class="clearfix-padding" id="services"></div>
+
+<!-- PORTFOLIO-->
+
+    <div class="one-third-padding" id="propuesta">
+      <h3>Propuesta</h3>
+      <figure>
+      <img src="pics/imagen3.jpg" alt="maraton" width="320">
+      <p>Dia super especial que nunca olvidaremos</p>
+      </figure>
+    </div>
+
+    <div class="one-third-padding" id="propuesta">
+      <h3>Con el anillo</h3>
+      <figure>
+      <img src="pics/imagen2.jpg" alt="maraton" width="320">
+      <p>La cara de felicidad lo dice todo</p>
+    </figure>
+    </div>
+
+    <div class="one-third-padding" id="propuesta">
+      <h3>Cena festejando</h3>
+      <figure>
+      <img src="pics/imagen1.jpg" alt="maraton" width="320">
+      <p>PD. Estabamos muertos luego del maraton pero igual fuimos a celebrar</p>
+    </figure>
+    </div>
+
+    <section class="left-col" id="portfolio" >
+      <h3>Paseitos</h3>
+      <p>Represa en Mendoza. Argentina. Dia de paseos en unas vacaciones inolvidables.</p>
+    </section>
+    <section class="sidebar">
+      <figure>
+      <img src="pics/playa.jpg" alt="PLAYA">
+    </figure>
+    </section>
+      <div class="clearfix-padding" id="services"></div>
+
+<!-- PORTFOLIO 2-->
+
+<div class="one-third-padding" id="propuesta">
+  <h3>Familia</h3>
+  <figure>
+  <img src="pics/imagen4.jpg" alt="familia" width="350">
+  <p>Join Burguer.  </p>
+</figure>
+</div>
+
+<div class="one-third-padding" id="propuesta">
+  <h3>Barby & Yohaly</h3>
+  <figure>
+  <img src="pics/hijas.jpg" alt="hijas" width="350">
+  <p>Las hijas que la vida nos dio.  </p>
+</figure>
+</div>
+
+<div class="one-third-padding" id="propuesta">
+  <h3>Navidad</h3>
+  <figure>
+  <img src="pics/navidad.jpg" alt="navidad" width="350">
+  <p>24 de diciembre con familia y amigos. </p>
+</figure>
+</div>
+
+  <div class="clearfix-padding" id="services"></div>
+
+
+  <!-- PORTFOLIO 3-->
+
+<div class="one-third-padding" id="propuesta">
+  <h3>Paseo</h3>
+  <figure>
+  <img src="pics/imagen6.jpg" alt="familia">
+  <p>Dias de paseo en familia. Buenos Aires.</p>
+</figure>
+</div>
+
+<div class="one-third-padding" id="propuesta">
+  <h3>Amigos</h3>
+  <figure>
+  <img src="pics/imagen5.jpg" alt="hijas">
+  <p>Shopping. Comida con amigos. Brasil.  </p>
+</figure>
+</div>
+
+<div class="one-third-padding" id="propuesta">
+  <h3>Amigos</h3>
+  <figure>
+  <img src="pics/amigos1.jpg" alt="navidad">
+  <p>Amigos y Familia espectaculares. Buenos Aires.</p>
+</figure>
+</div>
+
+<section class="left-col" id="portfolio" >
+  <h3>Shopping Abasto</h3>
+  <p>Foto de navidad con la princesa Guadalupe.</p>
+</section>
+<section class="sidebar">
+  <figure>
+  <img src="pics/navidad1.jpg" alt="amigas">
+</figure>
+</section>
+
+  <div class="clearfix-padding" id="services"></div>
+
+  <!-- PORTFOLIO 4-->
+
+  <h1>Nuestra Princesa Hermosa</h1>
+<div class="one-third-padding" id="propuesta">
+  <h3></h3>
+  <figure>
+  <img src="pics/imagen12.jpg" alt="familia">
+  <p>Maraton</p>
+</figure>
+</div>
+
+<div class="one-third-padding" id="propuesta">
+  <h3></h3>
+  <figure>
+  <img src="pics/imagen10.jpg" alt="hijas">
+  <p>Primera vez comiendo pizza.  </p>
+</figure>
+</div>
+
+<div class="one-third-padding" id="propuesta">
+  <h3></h3>
+  <figure>
+  <img src="pics/imagen11.jpg" alt="navidad">
+  <p>Con la Tia Ciane. </p>
+</figure>
+</div>
+
+  <div class="clearfix-padding" id="services"></div>
+
+
+<footer>
+<div class="banner-wrapper">
+  <div class="icon-text">
+    <div class="icon-text-icon">
+      <ul class="footer-nav">
+        <li>
+          <a href="modulo.html">Inicio</a>
+        </li>
+        <li>
+          <a href="#trips">Paseos</a>
+        </li>
+        <li>
+          <a href="#travels">Viajes</a>
+        </li>
+        <li>
+          <a href="#specialdays">Familia & Amigos</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="icon-text-text">
+      <ul class="social">
+        <li>
+          <a href="nosotrosnosamamos@gmail.com" target="_blank">
+            <i class="fa fa-envelope-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="facebook" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="twitter" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=1hqWGrAEOP0" target="_blank">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ljzerpa" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+
+<footer class="footer-second">
+<p>
+&copy; Luis Zerpa & Graciane De Souza
+</p>
+</footer>
+    
+
+<!--SCRIPS -->
+<script>
+  $(document).ready(function(){
+    $(".slider1").bxSlider({
+      mode: "fade"
+    })
+    $(".slider2").bxSlider({
+      mode: "fade"
+    })
+    $(".slider3").bxSlider({
+      mode: "fade"
+    })
+    $(".slider4").bxSlider({
+      mode: "fade"
+    })
+    $(".slider5").bxSlider({
+      mode: "fade"
+    })
+  })
+</script>
+  </body>
+</html>
